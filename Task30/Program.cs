@@ -30,7 +30,8 @@ void PrintArray(int[] array)
 
 
 Random random = new Random();
-int size = random.Next(4, 10);
+//int size = random.Next(4, 10);
+int size = 8;
 int[] numbers = new int[size];
 Console.WriteLine ($"Размер массива {size}");
 FillArray(numbers);

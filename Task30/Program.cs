@@ -26,3 +26,31 @@ void PrintArray(int[] array)
         Console.Write($"{array[i]} ");
     }
 }
+
+
+
+/* Random random = new Random();
+int size = random.Next(4, 10);
+int[] numbers = new int[size];
+Console.WriteLine ($"Размер массива {size}");
+
+FillArray(numbers);
+
+for (int i = 0; i < size; i++)
+ {
+    Console.Write($"{numbers[i]} ");
+}
+
+
+void FillArray(int[] num)
+{
+    Random random = new Random();
+    for (int i = 0; i < num.Length; i++)
+    {
+        num[i] = random.Next(0, 2);
+    }
+} */
+
+
+
+

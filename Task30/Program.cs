@@ -1,6 +1,6 @@
 ﻿// Программа, которая принимает на вход число, создает массив данного размера, заполняет его нулями и единицами в случайном порядке и выводит в консоль
 
-Console.Clear();
+/* Console.Clear();
  
 Console.Write("Введите размер массива: ");
 int arrayLenght = int.Parse(Console.ReadLine()!);
@@ -25,22 +25,16 @@ void PrintArray(int[] array)
     {
         Console.Write($"{array[i]} ");
     }
-}
+} */
 
 
 
-/* Random random = new Random();
+Random random = new Random();
 int size = random.Next(4, 10);
 int[] numbers = new int[size];
 Console.WriteLine ($"Размер массива {size}");
-
 FillArray(numbers);
-
-for (int i = 0; i < size; i++)
- {
-    Console.Write($"{numbers[i]} ");
-}
-
+PrintArray(numbers);
 
 void FillArray(int[] num)
 {
@@ -49,7 +43,16 @@ void FillArray(int[] num)
     {
         num[i] = random.Next(0, 2);
     }
-} */
+} 
+
+void PrintArray(int[] num)
+{
+    for (int i = 0; i < num.Length; i++)
+    {
+        Console.Write($"{num[i]} ");
+    }
+}
+
 
 
 

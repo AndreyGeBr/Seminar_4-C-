@@ -29,7 +29,7 @@ void PrintArray(int[] array)
 
 
 
-Random random = new Random();
+//Random random = new Random();
 //int size = random.Next(4, 10);
 int size = 8;
 int[] numbers = new int[size];

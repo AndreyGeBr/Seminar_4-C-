@@ -4,14 +4,24 @@
 
 Console.Clear();
 
-Random random = new Random();
-int size = random.Next(4, 10);
-int[] array = new int[size];
+int[] array = CreateArray();
 FillArray(array);
 PrintArray(array);
 int[] arrayPr = Product(array);
 PrintArray(arrayPr);
 
+
+
+
+
+int[] CreateArray()
+{
+    //Random random = new Random();
+    //int size = random.Next(4, 10);
+    //int[] array = new int[size];
+    int[] array = new int [new Random().Next(4, 10)];
+    return array;
+}
 
 int[] Product(int[] num)
 {
